@@ -1,7 +1,5 @@
 a = int(input('First input: '))
-
 # w = x = y = z = 0
-
 if a == 0:
     w = x = y = z = "GREEN"
     pattern = "🟢 🟢 🟢 🟢"
@@ -19,4 +17,3 @@ else:
 
 print(f"Output: w={w}, x={x}, y={y}, z={z}")
 print(f"Visual: {pattern}")
-
