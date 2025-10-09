@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 import numpy as np
 
@@ -16,9 +16,8 @@ print(target)
 # Split the data into 70% training and 30% testing
 X_train, X_test, y_train, y_test = train_test_split(inputs, target, test_size=0.3, random_state=42)
 
-# Create and train Random Forest Classifier with enhanced hyperparameters
-model = RandomForestClassifier(
-    n_estimators=100,
+# Create and train Decision Tree Classifier
+model = DecisionTreeClassifier(
     max_depth=10,
     min_samples_split=5,
     min_samples_leaf=2,
